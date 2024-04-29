@@ -22,4 +22,13 @@ icon = "data/icon.png"
 "omni.isaac.core" = {}
 
 [[python.module]]
-name = "RBMirobotExample_python"
+name = "RBMirobotExample_python.MirobotFollowTarget"
+
+[[python.module]]
+name = "RBMirobotExample_python.MirobotPickandPlace"
+
+[[python.module]]
+name = "RBMirobotExample_python.MirobotPickandPlaceROS2"
+
+[[python.module]]
+name = "RBMirobotExample_python.SurfaceGripper"

@@ -62,7 +62,7 @@ class Extension(omni.ext.IExt):
         menu_items = [
             make_menu_item_description(ext_id, EXTENSION_NAME, lambda a=weakref.proxy(self): a._menu_callback())
         ]
-        self._menu_items = [MenuItemDescription(name="RoadBalanceEdu", sub_menu=menu_items)]
+        self._menu_items = [MenuItemDescription(name="RBMirobotExample", sub_menu=menu_items)]
         add_menu_items(self._menu_items, "Isaac Examples")
 
         self._build_ui()

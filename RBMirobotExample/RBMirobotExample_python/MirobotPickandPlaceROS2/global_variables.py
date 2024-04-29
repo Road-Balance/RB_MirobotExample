@@ -7,6 +7,6 @@
 # license agreement from NVIDIA CORPORATION is strictly prohibited.
 #
 
-EXTENSION_TITLE = "MyExtension"
+EXTENSION_TITLE = "RBMirobotExample"
 
 EXTENSION_DESCRIPTION = ""
