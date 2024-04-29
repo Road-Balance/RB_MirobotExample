@@ -13,8 +13,12 @@ class KinematicsSolver(ArticulationKinematicsSolver):
         # my_path = "/home/kimsooyoung/Documents/IsaacSim/rb_issac_tutorial/RoadBalanceEdu/ManipFollowTarget/"
         # self._urdf_path = "/home/kimsooyoung/Downloads/USD/cobotta_pro_900/"
         
-        # lactop 
-        self._desc_path = "/home/kimsooyoung/Documents/IssacSimTutorials/rb_issac_tutorial/RoadBalanceEdu/MirobotFollowTarget/"
+        # # lactop 
+        # self._desc_path = "/home/kimsooyoung/Documents/IssacSimTutorials/rb_issac_tutorial/RoadBalanceEdu/MirobotFollowTarget/"
+        # self._urdf_path = "/home/kimsooyoung/Downloads/Source/mirobot_ros2/mirobot_description/urdf/"
+
+        # demo desktop
+        self._desc_path = "/home/kimsooyoung/Downloads/Source/RB_MirobotExample/RBMirobotExample/RBMirobotExample_python/MirobotFollowTarget/"
         self._urdf_path = "/home/kimsooyoung/Downloads/Source/mirobot_ros2/mirobot_description/urdf/"
 
         self._kinematics = LulaKinematicsSolver(

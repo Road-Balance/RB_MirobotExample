@@ -134,11 +134,11 @@ class PickandPlaceExample(BaseSample):
 
         self.setup_robot()
         
-        # # bin case
-        # self.setup_bin()
+        # bin case
+        self.setup_bin()
         
-        # box case
-        self.setup_box()
+        # # box case
+        # self.setup_box()
 
         return
 
@@ -174,16 +174,16 @@ class PickandPlaceExample(BaseSample):
 
     def sim_step_cb(self, step_size):
 
-        # # bin case
-        # bin_pose, _ = self._packing_bin_geom.get_world_pose()
-        # pick_position = bin_pose
-        # place_position = self._target_position
-
-        # box case
-        box_matrix = omni.usd.get_world_transform_matrix(self._boxGeom)
-        box_trans = box_matrix.ExtractTranslation()
-        pick_position = np.array(box_trans)
+        # bin case
+        bin_pose, _ = self._packing_bin_geom.get_world_pose()
+        pick_position = bin_pose
         place_position = self._target_position
+
+        # # box case
+        # box_matrix = omni.usd.get_world_transform_matrix(self._boxGeom)
+        # box_trans = box_matrix.ExtractTranslation()
+        # pick_position = np.array(box_trans)
+        # place_position = self._target_position
 
         joints_state = self._my_mirobot.get_joints_state()
         

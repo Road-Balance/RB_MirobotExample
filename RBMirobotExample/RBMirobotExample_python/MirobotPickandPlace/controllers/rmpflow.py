@@ -6,13 +6,18 @@ class RMPFlowController(mg.MotionPolicyController):
     def __init__(self, name: str, robot_articulation: Articulation, physics_dt: float = 1.0 / 60.0) -> None:
         # TODO: chamge the follow paths
 
-        # laptop
-        self._desc_path = "/home/kimsooyoung/Documents/IssacSimTutorials/rb_issac_tutorial/RoadBalanceEdu/MirobotFollowTarget/"
-        self._urdf_path = "/home/kimsooyoung/Downloads/Source/mirobot_ros2/mirobot_description/urdf/"
+        # # laptop
+        # self._desc_path = "/home/kimsooyoung/Documents/IssacSimTutorials/rb_issac_tutorial/RoadBalanceEdu/MirobotFollowTarget/"
+        # self._urdf_path = "/home/kimsooyoung/Downloads/Source/mirobot_ros2/mirobot_description/urdf/"
 
         # # desktop
         # self._desc_path = "/home/kimsooyoung/Downloads/source/RoadBalanceEdu/rb_issac_tutorial/RoadBalanceEdu/MirobotPickandPlace/"
         # self._urdf_path = "/home/kimsooyoung/Downloads/source/mirobot_ros2/mirobot_description/urdf/"
+
+        # demo desktop
+        self._desc_path = "/home/kimsooyoung/Downloads/Source/RB_MirobotExample/RBMirobotExample/RBMirobotExample_python/MirobotFollowTarget/"
+        self._urdf_path = "/home/kimsooyoung/Downloads/Source/mirobot_ros2/mirobot_description/urdf/"
+
 
         self.rmpflow = mg.lula.motion_policies.RmpFlow(
             robot_description_path=self._desc_path+"rmpflow/robot_descriptor.yaml",
